@@ -73,6 +73,11 @@ public class UserTest {
         assertEquals(15, user2.getReputation());
     }
 
+        /*
+        These next series of tests make sure that a questioner cannot modify their
+        reputation by either up voting or down voting their questions and answers.
+        */
+
     // Testing that a questioner cannot up vote their question here
     @Test
     public void questionerCannotUpVoteTheirOwnQuestion() throws Exception {
@@ -147,4 +152,3 @@ public class UserTest {
             assertEquals(-1, user1.getReputation());
         }*/
 }
-
